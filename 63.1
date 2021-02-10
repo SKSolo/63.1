@@ -1,0 +1,31 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+void zadanie()
+{
+	string s;
+	ifstream plik;
+	
+	plik.open("C:\\ciagi.txt");
+	
+	while (!plik.eof()){
+        plik>>s;  
+		cout<<s;
+		cout<<endl;  
+    }
+    plik.close();
+    
+  	char s1,s2;
+    
+    s1 = s.substr(0, s.length() / 2);
+    s2 = s.substr(s.length() / 2, s.length() / 2);
+   
+
+	
+}
+
+int main(int argc, char** argv) {
+	zadanie();
+	return 0;
+}
